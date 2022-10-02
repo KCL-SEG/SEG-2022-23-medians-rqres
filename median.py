@@ -2,6 +2,7 @@
 """ENTER YOUR SOLUTION HERE!"""
 
 def calc_median(nums):
+    nums.sort()
     odd = True if len(nums) % 2 == 1 else False
     if odd:
         median = nums[int( len(nums) / 2 )]
