@@ -18,5 +18,6 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         break
-print(numbers)
-print(f'{calc_median(numbers)} is the median number of the list.')
+# print(numbers)
+# print(f'{calc_median(numbers)} is the median number of the list.')
+print(calc_median(numbers))
