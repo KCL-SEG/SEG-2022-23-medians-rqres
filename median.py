@@ -1,6 +1,15 @@
 """Median calculator."""
 """ENTER YOUR SOLUTION HERE!"""
 
+def calc_median(nums):
+    odd = True if len(nums) % 2 == 1 else False
+    if odd:
+        median = nums[int( len(nums) / 2 )]
+    else:
+        median = (nums[int( len(nums) / 2 )] + nums[int( len(nums) / 2  )- 1]) / 2
+
+    return median
+
 while True:
     try:
         print("Enter a list of numbers separated by commas: ")
@@ -10,3 +19,4 @@ while True:
     else:
         break
 print(numbers)
+print(f'{calc_median(numbers)} is the median number of the list.')
